@@ -71,10 +71,13 @@
       <div class="row">
         <div class="col-11 align-self-star">
           <h4 class="card-title">Acerca de...</h4>
-          <p class="card-text">Pintor Industrial, estudiante de Desarrollo y Programación</p>
+          <p id="textAcercaDe" class="card-text">Pintor Industrial, estudiante de Desarrollo y Programación</p>
+          <div>
+            <input id="editAcercade" type="text" oninput="myfunction2(this.value)" style="display: none;"></input>
+          </div>
         </div>
         <div class="col-1 align-self-end">
-          <img src="/img/pencil-square.svg" alt="Edit" style="margin-left: 10px; margin-top: -100px;">
+        <a href="#" img class="btn-edit" src="/img/pencil-square.svg" alt="Edit" style="margin-left: 10px; margin-top: -100px;" class="btn-rigth" onclick="cambiarParrafo"></a>
         </div>
     </div>
     </div>
@@ -187,6 +190,13 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script>
+    function cambiarParrafo(){
+  document.getElementById("editAcercade").style.display="block";
+  let texto = document.getElementById("textAcercade").innerText;
+  console.log(texto);
+  }
+  </script>
 </body>
 </html>

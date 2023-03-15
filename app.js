@@ -1,0 +1,3 @@
+function cambiarParrafo(){
+document.getElementById()
+}
