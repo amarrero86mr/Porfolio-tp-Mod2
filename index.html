@@ -6,124 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Author" content="Agustin Marrero">
     <title>TP Mod 2</title>
-    <!--<link href="bootstrap-5.2.3-dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7455d11856.css" crossorigin="anonymous">
     <link href="/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid">
   <div class="card card-lg" id="margin2">
-    <img src="/img/portada.png.jpg" class="card-img-top" alt="galaxy" id="portada" style="height:350px;">
+    <img src="/img/portada.png.jpg" class="card-img-top" class="img-responsive" alt="galaxy" id="portada" style="height:350px;">
 
-    <div class="row">
-        <div class="col-11">
-          <img src="/img/avatar1.jpg" alt="galaga" class="rounded-circle" height="100px" width="100px" id="avatar">
+      <div class="row">
+        <div class="col-2">
+          <img src="/img/avatar1.jpg" alt="galaga" class="rounded-circle" height="150px" width="150px" id="avatar">
         </div>
-        <div class="col-1">
-          <img src="/img/pencil-square.svg" alt="Edit" style="margin-left: -15px;">
+        <div class="col-1 d-flex align-content-end flex-wrap">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-pen"></i></a></div>
         </div>
     </div>
     
 
     <div class="container-xl">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-10 align-self-star">
-          <h4 class="card-title">Fernandito</h4>
-          <p class="card-text">Pintor en Lakalumba</p>
-          <p class="card-text">Buenos Aires (argentina) <a href="#">Información de contacto</a> </p>
-                    
-        </div>
-        <div class="col-1 align-self-top">
-          <div class="row-1">
-            <img src="/img/icono ArgPro.png" alt="Argentina Programa 4.0" height="50px">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-8 align-self-star">
+            <h4 class="card-title">Fernandito</h4>
+            <p class="card-text">Pintor en Lakalumba</p>
+            <p class="card-text">Buenos Aires (argentina) <a href="#">Información de contacto</a> </p>
+          
           </div>
-          <div class="row-1">
-            <img src="/img/icono lakalumba.png" alt="Lakalumba" height="50px"> 
+          <div class="col-3 d-flex align-content-right flex-wrap">
+            <div class="row-1">
+              <ul id="link-reference">
+                <li><h6><a href="#" style="text-decoration: none"><img src="/img/icono ArgPro.png" alt="Argentina Programa 4.0" height="50px"> Argentina Programa 4.0</h6>
+                </a></li>
+                <li><h6><a href="#" style="text-decoration: none"><img src="/img/icono lakalumba.png" alt="Lakalumba" height="50px"> Lakalumba</h6>
+                </a></li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="col" style="margin-top:10px;">
-        <ul class="nav">
-          <li class="nav-item btn">
-            <a class="btn btn-primary" href="#" role="button">tengo interes en</a>
-          </li>
-          <li class="nav-item btn">
-            <a class="btn btn-light" href="#" role="button">Añadir Sección</a>
-          </li>
-          <li class="nav-item btn">
-            <a class="btn btn-light" href="#" role="button">Más</a>
-          </li>
-        </ul>
+          <div class="col" style="margin-top:10px;">
+            <ul class="nav">
+              <li class="nav-item btn">
+                <a class="btn btn-primary" href="#" role="button">tengo interes en</a>
+              </li>
+              <li class="nav-item btn">
+                <a class="btn btn-light" href="#" role="button">Añadir Sección</a>
+              </li>
+              <li class="nav-item btn">
+                <a class="btn btn-light" href="#" role="button">Más</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-
-    </div>
-    </div>
     </div>
   </div>
   
 
   <div class="card card-lg" id="margin2">
     <div class="container-xl">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-11 align-self-star">
-          <h4 class="card-title">Acerca de...</h4>
-          <p id="textAcercaDe" class="card-text">Pintor Industrial, estudiante de Desarrollo y Programación</p>
-          <div>
-            <input id="editAcercade" type="text" oninput="myfunction2(this.value)" style="display: none;"></input>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-11 align-self-star">
+            <h4 class="card-title">Acerca de...</h4>
+            <p id="textAcercaDe" class="card-text">Pintor Industrial, estudiante de Desarrollo y Programación</p>
+          </div>
+          <div class="col-1 d-flex align-content-top flex-wrap">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-pen"></i></a></div>
           </div>
         </div>
-        <div class="col-1 align-self-end">
-        <a href="#" img class="btn-edit" src="/img/pencil-square.svg" alt="Edit" style="margin-left: 10px; margin-top: -100px;" class="btn-rigth" onclick="cambiarParrafo"></a>
-        </div>
-    </div>
-    </div>
+      </div>
     </div>
   </div>
 
   <div class="card card-lg" id="margin2">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-11 align-self-star">
-          <h5>Experiencia</h5>
+    <div class="container-xl">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-11 align-self-star">
+            <h5>Experiencia</h5>
+          </div>
+          <div class="col-1 d-flex align-content-top flex-wrap">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-pen"></i></a></div>
+          </div>
         </div>
-        <div class="col-1 align-self-end">
-          <img src="/img/pencil-square.svg" alt="Edit" style="margin-top: -10px;">
-        </div>
-      </div>
-        
-     <div class="row">
-      <div class="col-1">
-        <img src="/img/icono lakalumba.png" alt="lakalumba" height="50px">
-      </div>
-      <div class="col-10">
-        <p><small>Pintor Industrial / Mantenimiento General</small></p>
-        <p>mayo 2018 - noviembre 2022</p>
-        <p>Buenos Aires, Argentina</p>
-      </div>
+        <div class="row">
+          <div class="col-1">
+            <img src="/img/icono lakalumba.png" alt="lakalumba" height="50px">
+          </div>
+          <div class="col-10">
+            <p><small>Pintor Industrial / Mantenimiento General</small></p>
+            <p>mayo 2018 - noviembre 2022</p>
+            <p>Buenos Aires, Argentina</p>
+          </div>
       
-      <h5>Educación</h5>
-      <div class="row">
-        <div class="col-10">
-          <h6>Esc.Tec. Casal Calviño</h6>
-          <p><small>Técnico Mecánico en Máquinas Herramientas</small></p>
-          <p><small>2000 - 2008</small></p>          
-        </div>
-      </div>
+          <h5>Educación</h5>
+          <div class="row">
+            <div class="col-10">
+              <h6>Esc.Tec. Casal Calviño</h6>
+              <p><small>Técnico Mecánico en Máquinas Herramientas</small></p>
+              <p><small>2000 - 2008</small></p>          
+            </div>
+          </div>
       
-      <div class="row">
-        <div class="col-10">
-          <h6>Argentina Programa</h6>
-          <p><small>#Se Programar - Primer instancia del ciclo Argentina Programa</small></p>
-          <p><small>2022</small></p>          
+          <div class="row">
+            <div class="col-10">
+              <h6>Argentina Programa</h6>
+              <p><small>#Se Programar - Primer instancia del ciclo Argentina Programa</small></p>
+              <p><small>2022</small></p>          
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
-</div>
 
   <div class="card mb-3 card-lg"  id="margin2">
     <div class="container-xl">
@@ -133,8 +132,8 @@
           <h4 class="card-title">Hadr Skills & Soft Skills</h4>
         </div>
 
-        <div class="col-1 align-self-end">
-          <img src="/img/pencil-square.svg" alt="Edit" style="margin-left: 10px; margin-top: -10px;">
+        <div class="col-1 d-flex align-content-top flex-wrap">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-pen"></i></a></div>
         </div>
         </div>
       <div class="row">
@@ -157,46 +156,42 @@
   </div>
 
   <div class="card card-lg" id="margin2">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-11 align-self-star">
-          <h5>Proyectos</h5>
-        </div>
-        <div class="col-1 align-self-end">
-          <img src="/img/pencil-square.svg" alt="Edit" style="margin-top: -10px;">
-        </div>
-      </div>
-        
-      <div class="row">
-        <div class="col-1">
-          <img src="/img/icono lakalumba.png" alt="lakalumba" height="50px">
-        </div>
-        <div class="col-10">
-          <h6 style="color: teal;">Laka-Production</h6>
-          <p>Programa de proyección de la produccion, su distintos tiempos, procesos y requerimientos.</p>
-        </div>
-        
-
-        <div class="row" style="margin-top:20px;">
-          <div class="col-1"></div>
-
-          <div class="col-10">
-            <h6 style="color: teal;">assigned task</h6>
-            <p>Desarrollo de app de asignación de horarios rotativos para el personal.</p>
+    <div class="container-xl">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-11 align-self-star">
+            <h5>Proyectos</h5>
           </div>
-          
+          <div class="col-1 d-flex align-content-top flex-wrap">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa-solid fa-pen"></i></a></div>
+          </div>
         </div>
+        
+        <div class="row">
+          <div class="col-1">
+            <img src="/img/icono lakalumba.png" alt="lakalumba" height="50px">
+          </div>
+          <div class="col-10">
+            <h6 style="color: teal;">Laka-Production</h6>
+            <p>Programa de proyección de la produccion, su distintos tiempos, procesos y requerimientos.</p>
+          </div>
+        
+          <div class="row" style="margin-top:20px;">
+            <div class="col-1"></div>
 
+            <div class="col-10">
+              <h6 style="color: teal;">assigned task</h6>
+              <p>Desarrollo de app de asignación de horarios rotativos para el personal.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <script>
-    function cambiarParrafo(){
-  document.getElementById("editAcercade").style.display="block";
-  let texto = document.getElementById("textAcercade").innerText;
-  console.log(texto);
-  }
-  </script>
+  <script src="https://kit.fontawesome.com/7455d11856.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>

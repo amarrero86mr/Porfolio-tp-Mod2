@@ -1,5 +1,6 @@
 #margin2{
     margin: 20px;
+    border-color: cadetblue;
 }
 #portada{
     height: 210px;
@@ -8,4 +9,8 @@
 #avatar{
     margin-left: 15px;
     margin-top: -50px;
+}
+#link-reference{
+    list-style-type: none;
+    
 }
